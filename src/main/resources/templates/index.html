@@ -9,5 +9,12 @@
 			REVIEWS SITE NAME
 		</h1>
 	</header>
+	<main>
+		<nav th:each="category : ${categories}">
+			<div>
+				<h2 th:text="${category.name}">Category Name</h2>
+			</div>
+		</nav>
+	</main>
 </body>
 </html>
