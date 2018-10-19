@@ -1,7 +1,7 @@
-package org.wecancodeit.repository;
+package org.wecancodeit.reviewssitefullstack.repository;
 
 import org.springframework.data.repository.CrudRepository;
-import org.wecancodeit.model.Review;
+import org.wecancodeit.reviewssitefullstack.model.Review;
 
 public interface ReviewRepository extends CrudRepository<Review, Long> {
 

@@ -1,4 +1,7 @@
-package org.wecancodeit.model;
+package org.wecancodeit.reviewssitefullstack.model;
+
+import java.util.HashSet;
+import java.util.Set;
 
 import java.util.HashSet;
 import java.util.Set;
