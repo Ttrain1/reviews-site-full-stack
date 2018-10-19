@@ -17,8 +17,8 @@ import org.wecancodeit.reviewssitefullstack.repository.CategoryRepository;
 import org.wecancodeit.reviewssitefullstack.repository.ReviewRepository;
 
 @RunWith(SpringRunner.class)
-@WebMvcTest(ReviewsController.class)
-public class ReviewsControllerTest {
+@WebMvcTest(CategoryController.class)
+public class CategoryControllerTest {
 
 	@Autowired
 	MockMvc mockmvc;

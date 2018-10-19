@@ -9,14 +9,14 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.wecancodeit.reviewssitefullstack.repository.CategoryRepository;
 
 @Controller
-public class ReviewsController {
+public class CategoryController {
 
 	@Resource
 	CategoryRepository categoryRepo;
 
 	@GetMapping("/")
 	public String index(Model model) {
-		model.addAttribute("category", categoryRepo.findAll());
+		model.addAttribute("categories", categoryRepo.findAll());
 		return "index";
 	}
 }
