@@ -3,9 +3,6 @@ package org.wecancodeit.reviewssitefullstack.model;
 import java.util.HashSet;
 import java.util.Set;
 
-import java.util.HashSet;
-import java.util.Set;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -19,10 +16,9 @@ public class Category {
 	private Long id;
 	private String name;
 
-	@OneToMany
-	(mappedBy="category")
+	@OneToMany(mappedBy = "category")
 	private Set<Review> reviews = new HashSet<Review>();
-	
+
 	public Category() {
 	}
 
