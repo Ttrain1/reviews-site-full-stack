@@ -5,6 +5,12 @@
 }
 
 .small-picture{
-	height: 100px;
-	width: auto;
+	max-height: 100px;
+	max-width: 200px;
+	object-fit: cover;
+}
+	
+.navigation{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
 }

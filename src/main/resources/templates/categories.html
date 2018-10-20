@@ -6,20 +6,16 @@
 </head>
 <body>
 	<header>
-		All Game Reviews
+		<h1>All Game Reviews</h1>
 	</header>
 	<main>
-		<nav>
-			<ul>
-				<li th:each="review : ${category.reviews}">
-					<a th:href="|/review/${review.id}|">
-						<h3 th:text="${review.name}"></h3>
-						<figure class="small-picture">
-							<img th:src="${review.imageUrl}">
-						</figure>
-					</a>
-				</li>
-			</ul>
+		<nav class="navigation">
+			<div th:each="review : ${category.reviews}">
+				<a th:href="|/review/${review.id}|">
+					<h3 th:text="${review.name}"></h3>
+					<img class="small-picture" th:src="${review.imageUrl}">
+				</a>
+			</div>
 		</nav>
 	</main>
 	<footer>
