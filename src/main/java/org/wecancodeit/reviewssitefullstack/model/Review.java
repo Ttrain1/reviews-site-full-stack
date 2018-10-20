@@ -3,6 +3,7 @@ package org.wecancodeit.reviewssitefullstack.model;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Lob;
 import javax.persistence.ManyToOne;
 
 @Entity
@@ -13,6 +14,7 @@ public class Review {
 	private Long id;
 	private String name;
 	private String imageUrl;
+	@Lob
 	private String description;
 	
 	@ManyToOne
