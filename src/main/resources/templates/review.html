@@ -11,6 +11,9 @@
 	</header>
 	<main>
 		<h2 th:text="${review.name}"></h2>
+		<figure>
+			<img th:src="${review.imageUrl}">
+		</figure>
 		<p th:text="${review.description}"></p>
 	</main>
 	<footer>
