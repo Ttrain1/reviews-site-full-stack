@@ -17,15 +17,15 @@ public class CategoryController {
 	@GetMapping("/")
 	public String index(Model model) {
 		model.addAttribute("categories", categoryRepo.findAll());
-		
+
 		return "index";
 	}
-	
+
 	@GetMapping("/category/{id}")
-	public String catagories (@PathVariable (value="id")Long id, Model model) {
-		model.addAttribute("category", categoryRepo.findById(id));
-		
+	public String catagories(@PathVariable(value = "id") Long id, Model model) {
+		model.addAttribute("category", categoryRepo.findById(id).get());
+
 		return "categories";
 	}
-	
+
 }
