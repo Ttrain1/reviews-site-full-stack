@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-		<link rel="stylesheet" type="text/css" href="/css/layout.css">
 	<title>Reviews</title>
 	<link rel="stylesheet" type="text/css" href="/css/style.css">
 	<link rel="stylesheet" type="text/css" href="/css/layout.css">
 </head>
-	<body>
-<div class="container">
+<body>
+	<div class="container">
 		<header>
 			<h1>
 				Review
@@ -20,9 +19,9 @@
 			</figure>
 			<p th:text="${review.description}"></p>
 		</main>
-		<footer>
+		<footer class="copy">
 			<span>&copy; 2018</span>
 		</footer>
-</div>
-		</body>
+	</div>
+</body>
 </html>

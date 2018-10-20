@@ -3,6 +3,24 @@
 	margin: 0;
 
 }
+.container{
+	display: grid;
+	height: 100vh;
+	grid-template-rows: 100px auto 50px;
+}
+
+.copy{
+	display: flex;
+	justify-content: center;
+}
+
+.navigation{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-left: 20px;
+	margin-right: 20px;
+}
 
 .small-picture{
 	max-height: 100px;
@@ -10,7 +28,6 @@
 	object-fit: cover;
 }
 	
-.navigation{
-	display: grid;
-	grid-template-columns: repeat(3,1fr);
+header{
+	margin-left: 20px;
 }
