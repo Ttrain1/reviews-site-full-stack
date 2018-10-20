@@ -3,22 +3,26 @@
 <head>
 		<link rel="stylesheet" type="text/css" href="/css/layout.css">
 	<title>Reviews</title>
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/css/layout.css">
 </head>
-<body>
-	<header>
-		<h1>
-			Review
-		</h1>
-	</header>
-	<main>
-		<h2 th:text="${review.name}"></h2>
-		<figure>
-			<img th:src="${review.imageUrl}">
-		</figure>
-		<p th:text="${review.description}"></p>
-	</main>
-	<footer>
-		<span>&copy; 2018</span>
-	</footer>
-</body>
+	<body>
+<div class="container">
+		<header>
+			<h1>
+				Review
+			</h1>
+		</header>
+		<main>
+			<h2 th:text="${review.name}"></h2>
+			<figure>
+				<img th:src="${review.imageUrl}">
+			</figure>
+			<p th:text="${review.description}"></p>
+		</main>
+		<footer>
+			<span>&copy; 2018</span>
+		</footer>
+</div>
+		</body>
 </html>
