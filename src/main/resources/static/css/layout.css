@@ -1,0 +1,10 @@
+*{
+	border: border-box;
+	margin: 0;
+
+}
+
+.small-picture{
+	height: 100px;
+	width: auto;
+}
