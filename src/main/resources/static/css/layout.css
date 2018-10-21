@@ -30,4 +30,14 @@
 	
 header{
 	margin-left: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.content {
+	margin-left: 20px;
+}
+
+img {
+	object-fit: cover;
 }

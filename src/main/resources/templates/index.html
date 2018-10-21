@@ -4,21 +4,22 @@
 
 	<link rel="stylesheet" type="text/css" href="/css/style.css">
 	<link rel="stylesheet" type="text/css" href="/css/layout.css">
-	<title>REVIEWS SITE NAME</title>
+	<title> Video Game REVIEWS</title>
 </head>
 <body>
 	<div class="container">
 
 	<header>
 		<h1>
-			REVIEWS SITE NAME
+			Video Game reviews
 		</h1>
 	</header>
-	<main>
+	<main class="content">
+	<h2>Catigories</h2>
 		<nav th:each="category : ${categories}">
 			<div>
 				<a th:href="|/category/${category.id}|">
-					<h2 th:text="${category.name}">Category Name</h2>
+					<h3 th:text="${category.name}">Category Name</h3>
 				</a>
 			</div>
 		</nav>
