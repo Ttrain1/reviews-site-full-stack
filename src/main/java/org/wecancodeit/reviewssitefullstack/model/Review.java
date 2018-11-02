@@ -1,6 +1,6 @@
 package org.wecancodeit.reviewssitefullstack.model;
 
-import javax.persistence.Embedded;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -19,7 +19,7 @@ public class Review {
 	@Lob
 	private String description;
 	
-	@Embedded
+	
 	private Tag tag;
 	
 	@ManyToOne
