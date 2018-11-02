@@ -13,14 +13,17 @@ import antlr.collections.List;
 
 
 @Entity
+@Embeddable
 public class Tag {
 
 	@Id
 	@GeneratedValue
 	private Long id;
 	private String name;
-
-
+	
+@ManyToMany
+private Review review;
+private Set<Review> reviews;
 
 	public Long getId( ) {
 		return id;
