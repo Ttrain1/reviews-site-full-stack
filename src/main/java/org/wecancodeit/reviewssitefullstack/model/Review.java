@@ -4,6 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Lob;
+import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 
 @Entity
@@ -16,6 +17,9 @@ public class Review {
 	private String imageUrl;
 	@Lob
 	private String description;
+	
+	@ManyToMany
+	private Tag tag;
 	
 	@ManyToOne
 	private Category category;
