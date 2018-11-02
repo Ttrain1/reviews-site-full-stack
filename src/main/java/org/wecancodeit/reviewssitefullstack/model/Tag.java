@@ -19,5 +19,22 @@ public class Tag {
 	private String name;
 	@ManyToMany
 	(mappedBy="review")
-	private Collection<Review> reviews; 
+	private Collection<Review> reviews;
+	
+	public Long getId() {
+		return id;
+	}
+	public String getName() {
+		return name;
+	}
+	public Collection<Review> getReviews() {
+		return reviews;
+	}
+	public Tag(String name, Collection<Review> reviews) {
+		super();
+		this.name = name;
+		this.reviews = reviews;
+	} 
+	
+	
 }

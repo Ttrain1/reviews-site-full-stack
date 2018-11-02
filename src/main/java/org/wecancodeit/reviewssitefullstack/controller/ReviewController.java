@@ -19,4 +19,8 @@ public class ReviewController {
 		model.addAttribute("review", reviewRepo.findById(id).get());
 		return ("review");
 	}
+	@GetMapping("/reviews")
+	public String addReviews() {
+		return "redirect:/reviews";
+	}
 }
