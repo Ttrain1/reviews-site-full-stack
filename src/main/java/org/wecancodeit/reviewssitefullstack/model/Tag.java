@@ -2,6 +2,7 @@ package org.wecancodeit.reviewssitefullstack.model;
 
 import java.util.Collection;
 
+import javax.persistence.Embeddable;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -9,7 +10,7 @@ import javax.persistence.ManyToMany;
 
 import antlr.collections.List;
 
-@Entity
+@Embeddable
 public class Tag {
 
 	@Id
