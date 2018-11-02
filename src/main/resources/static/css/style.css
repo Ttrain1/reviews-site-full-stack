@@ -6,6 +6,7 @@
 .container {
 	background-color: #7B1418;
 }
+<<<<<<< HEAD
 
 img {background-color: #fff;
 	max-width: 100vw;
@@ -14,3 +15,8 @@ img {background-color: #fff;
 main h2 {
 	padding-bottom: 1%;
 }
+=======
+	.container__review{
+		background-color: #7B1418;
+	}
+>>>>>>> upstream/master
