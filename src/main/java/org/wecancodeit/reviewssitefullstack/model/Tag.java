@@ -9,10 +9,10 @@ import javax.persistence.Id;
 import javax.persistence.ManyToMany;
 
 
-@Entity
 import antlr.collections.List;
 
 
+@Entity
 public class Tag {
 
 	@Id
@@ -21,16 +21,18 @@ public class Tag {
 	private String name;
 
 
-	@ManyToMany(mappedBy = "tag")
-	private Set<Review> reviews;
 
+	public Long getId( ) {
+		return id;
+	}
 	public String getName() {
 		return name;
 	}
-
-	public Set<Review> getReviews() {
-		return reviews;
+	public Tag(String name) {
+		this.name = name;
 	}
+
+	
 
 
 	
